@@ -1,0 +1,306 @@
+
+:root {
+    /*Renkler*/
+    --bg: #46595e;
+    --blue: #4c70be;
+    --brown: #723420;
+    --white: #ffffff;
+    --green: #63d9c2;
+    --orange: #f99516;
+
+    /**********Container*****************/
+    /*Mobile*/
+    --easyContainerWidthMobile:350px;
+    --mediumContainerWidthMobile:364px;
+    --hardContainerWidthMobile:370px;
+    /*Tablet*/
+    --easyContainerWidthTablet:500px;
+    --mediumContainerWidthTablet:560px;
+    --hardContainerWidthTablet:595px;
+    /*Desktop*/
+    --easyContainerWidthDesktop:500px;
+    --mediumContainerWidthDesktop:518px;
+    --hardContainerWidthDesktop:540px;
+    /***************************/
+
+
+
+    /********************* Item **************/
+
+    /*Desktop*/
+    --easyLengthDesktop: 80px;
+    --mediumLengthDesktop: 60px;
+    --hardLengthDesktop: 50px;
+
+    /*Tablet*/
+    --easyLengthTablet: 80px;
+    --mediumLengthTablet: 70px;
+    --hardLengthTablet: 60px;
+
+    /*Mobile*/
+    --easyLengthMobile: 60px;
+    --mediumLengthMobile: 48px;
+    --hardLengthMobile: 37px;
+
+    /***********************************/
+}
+
+.App {
+    text-align: center;
+    user-select: none;
+    background-color: var(--bg);
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+
+.inactiveItem {
+    background: #5863b7;
+    border-radius: 8px !important;
+}
+
+.activeItem {
+    background: #e38a06;
+}
+
+.resultItemFalse {
+    background: #943ED3;
+    border-radius: 0px !important;
+    cursor: default !important;
+}
+
+.resultItemTrue {
+    background: #31a83d;
+    border-radius: 0px !important;
+    cursor: default !important;
+}
+
+
+.item:hover {
+    cursor: pointer;
+}
+
+
+.gameButtonArea {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gameButton {
+    margin: 0 auto;
+    width: 90px;
+    height: 40px
+}
+
+.container-wrapper{
+    padding: 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div .card-game{
+    margin-top: 6vh;
+}
+
+div .card-game .card-body{
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+.calculationIndicator{
+    position: absolute;
+    color: #4a4a4a;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 32px;
+}
+
+.calculationIndicatorVertical{
+    position: absolute;
+    color: #4a4a4a;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 32px;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    .container {
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .easyContainer {
+        width: var(--easyContainerWidthMobile)
+    }
+
+    .mediumContainer {
+        width: var(--mediumContainerWidthMobile)
+    }
+
+    .hardContainer {
+        width: var(--hardContainerWidthMobile)
+    }
+
+    .item {
+        display: flex;
+        color: var(--white);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hardItem {
+        width: var(--hardLengthMobile);
+        height: var(--hardLengthMobile);
+        border-radius: var(--hardLengthMobile);
+        margin: 2px;
+    }
+
+    .easyItem {
+        width: var(--easyLengthMobile);
+        height: var(--easyLengthMobile);
+        border-radius: var(--easyLengthMobile);
+        margin: 5px;
+
+    }
+
+    .mediumItem {
+        width: var(--mediumLengthMobile);
+        height: var(--mediumLengthMobile);
+        border-radius: var(--mediumLengthMobile);
+        margin: 2px;
+    }
+    
+    .calculationIndicator{
+        top: -390px;
+    }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+    .calculationIndicator{
+        top: -515px;
+    }
+
+    .container {
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .easyContainer {
+        width: var(--easyContainerWidthTablet)
+    }
+
+    .mediumContainer {
+        width: var(--mediumContainerWidthTablet)
+    }
+
+    .hardContainer {
+        width: var(--hardContainerWidthTablet)
+    }
+
+
+    .item {
+        display: flex;
+        color: var(--white);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hardItem {
+        width: var(--hardLengthTablet);
+        height: var(--hardLengthTablet);
+        border-radius: var(--hardLengthTablet);
+        margin: 3px;
+    }
+
+    .easyItem {
+        width: var(--easyLengthTablet);
+        height: var(--easyLengthTablet);
+        border-radius: var(--easyLengthTablet);
+        margin: 10px;
+
+    }
+
+    .mediumItem {
+        width: var(--mediumLengthTablet);
+        height: var(--mediumLengthTablet);
+        border-radius: var(--mediumLengthTablet);
+        margin: 5px;
+    }
+
+    .calculationIndicator{
+        top: -585px !important;
+    }
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .container {
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .easyContainer {
+        width: var(--easyContainerWidthDesktop)
+    }
+
+    .mediumContainer {
+        width: var(--mediumContainerWidthDesktop)
+    }
+
+    .hardContainer {
+        width: var(--hardContainerWidthDesktop)
+    }
+
+
+    .item {
+        display: flex;
+        color: var(--white);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hardItem {
+        width: var(--hardLengthDesktop);
+        height: var(--hardLengthDesktop);
+        border-radius: var(--hardLengthDesktop);
+        margin: 5px;
+    }
+
+    .easyItem {
+        width: var(--easyLengthDesktop);
+        height: var(--easyLengthDesktop);
+        border-radius: var(--easyLengthDesktop);
+        margin: 10px;
+
+    }
+
+    .mediumItem {
+        width: var(--mediumLengthDesktop);
+        height: var(--mediumLengthDesktop);
+        border-radius: var(--mediumLengthDesktop);
+        margin: 7px;
+    }
+
+    .calculationIndicator{
+        top: -535px !important;
+    }
+    
+    .calculationIndicatorVertical{
+        left: -530px;
+    }
+}

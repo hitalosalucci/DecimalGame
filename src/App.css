@@ -1,0 +1,62 @@
+:root {
+    --primary: #943ED3;
+    --secondary: #ac4af1;
+    --blue: #4c70be;
+    --brown: #723420;
+    --white: #ffffff;
+    --green: #63d9c2;
+    --orange: #f99516;
+}
+
+h6{
+    padding: 0;
+    margin: 0;
+}
+
+.text-primary{
+    color: var(--primary) !important;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.item {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    color: var(--white);
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inactiveItem{
+    background: var(--blue);
+}
+.activeItem{
+    background: var(--orange);
+}
+
+.resultItemFalse {
+    background: var(--brown);
+}
+
+.resultItemTrue{
+    background: var(--green);
+}
+
+
+.item:hover {
+    cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

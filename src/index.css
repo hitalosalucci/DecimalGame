@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--primary);
+  background-image: url("https://hackone.com.br/wp-content/uploads/2024/01/BG-gabriel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+body div.container{
+  padding: 40px;
+}
+
+div.card{
+  border-radius: 8px;
+  background-color: #efefefdd;
+  box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+}
+
+div.card-body{
+  padding: 1.5rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+div.wrapper-center{
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
